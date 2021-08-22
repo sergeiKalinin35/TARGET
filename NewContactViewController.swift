@@ -57,16 +57,14 @@ class NewContactViewController: UIViewController, UITextFieldDelegate {
 
         private func  saveAndExit() {
             guard let firstName = firstNameTextField.text else {return}
-            guard let lastName = lastNameTextField.text else {return}
+        //    guard let lastName = lastNameTextField.text else {return}
             
             
-           
-            let contact = Contact(firstName: firstName, lastName: lastName)
-            StorageManager.shared.save(contact: contact.fullName)
+         //   StorageManager.shared.save(contact: firstName)
 
             
           
-            delegate.saveContact(contact.fullName)
+            delegate.saveContact(firstName)
             dismiss(animated: true)
         }
         

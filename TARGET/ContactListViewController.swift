@@ -13,10 +13,20 @@ class ContactListViewController: UIViewController {
 
 @IBOutlet var tableView: UITableView!
 
-private var contacts: [String] = []
+
+  // var contacts: [String] = []
+    
+    var contacts = [String]()
+    
+    
+    
+    
 
 override func viewDidLoad() {
     super.viewDidLoad()
+    
+    tableView.delegate = self
+    tableView.dataSource = self
     
     tableView.rowHeight = 85
     
@@ -24,7 +34,7 @@ override func viewDidLoad() {
     navigationItem.leftBarButtonItem = editButtonItem
     
     
-contacts = StorageManager.shared.fetchContacts()
+//contacts = StorageManager.shared.fetchContacts()
 }
 
     // создаем кнопку боковую
@@ -62,8 +72,8 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     
   //  cell.oneLabel?.text = contacs[indexPath.row].target
    // cell.titleLabel.text = models[indexPath.row].title
-    cell.titleLabel?.text = contacts[indexPath.row]
-    cell.oneLabel?.text = contacts[indexPath.row]
+    cell.titleLabel?.text = contacts[indexPath.row]//.firstName
+    cell.oneLabel?.text = contacts[indexPath.row]//.lastName
     
     
     return cell
@@ -95,7 +105,7 @@ func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.Ed
         tableView.deleteRows(at: [indexPath], with: .automatic)
         
    
-        StorageManager.shared.delete(at: indexPath.row)
+    //    StorageManager.shared.delete(at: indexPath.row)
         
    }
 }
@@ -109,11 +119,17 @@ func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.Ed
     
 extension ContactListViewController: NewContactViewControllerDelegate {
     func saveContact(_ contact: String) {
-   contacts.append(contact)
+        contacts.append(contact)
     tableView.reloadData()
 }
 
  }
+
+struct Contact {
+    let firstName: String
+    let lastName: String
+    
+}
 
 struct MyReminder {
     

@@ -4,7 +4,7 @@
 //
 //  Created by Sergey on 22.08.2021.
 //
-
+/*
 import Foundation
 
 class StorageManager {
@@ -47,3 +47,4 @@ class StorageManager {
         
 }
 
+*/

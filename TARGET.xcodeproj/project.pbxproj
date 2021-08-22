@@ -16,7 +16,6 @@
 		F497CEFA26D1E9FB00B9C635 /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F497CEF926D1E9FB00B9C635 /* NewContactViewController.swift */; };
 		F497CEFC26D1EAA300B9C635 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F497CEFB26D1EAA300B9C635 /* StorageManager.swift */; };
 		F497CF0026D1F91C00B9C635 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F497CEFF26D1F91C00B9C635 /* TableViewCell.swift */; };
-		F497CF0426D207F200B9C635 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F497CF0326D207F200B9C635 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		F497CEF926D1E9FB00B9C635 /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
 		F497CEFB26D1EAA300B9C635 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		F497CEFF26D1F91C00B9C635 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		F497CF0326D207F200B9C635 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +46,6 @@
 		F497CED926D1E6BB00B9C635 = {
 			isa = PBXGroup;
 			children = (
-				F497CF0326D207F200B9C635 /* Contact.swift */,
 				F497CEF926D1E9FB00B9C635 /* NewContactViewController.swift */,
 				F497CEFB26D1EAA300B9C635 /* StorageManager.swift */,
 				F497CEE426D1E6BB00B9C635 /* TARGET */,
@@ -155,7 +152,6 @@
 				F497CEFA26D1E9FB00B9C635 /* NewContactViewController.swift in Sources */,
 				F497CF0026D1F91C00B9C635 /* TableViewCell.swift in Sources */,
 				F497CEE826D1E6BB00B9C635 /* SceneDelegate.swift in Sources */,
-				F497CF0426D207F200B9C635 /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
